@@ -5,7 +5,6 @@ from PIL import Image
 import time
 import os
 
-
 def pull_screenshot():
     os.system('adb shell screencap -p /sdcard/dancer.png')
     os.system('adb pull /sdcard/dancer.png .')
